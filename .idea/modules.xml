@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/BinarySearch/BinarySearch.iml" filepath="$PROJECT_DIR$/BinarySearch/BinarySearch.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BitOperation/BitOperation.iml" filepath="$PROJECT_DIR$/BitOperation/BitOperation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DivideConquer/DivideConquer.iml" filepath="$PROJECT_DIR$/DivideConquer/DivideConquer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DoublePointer/DoublePointer.iml" filepath="$PROJECT_DIR$/DoublePointer/DoublePointer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DynamicProgramming/DynamicProgramming.iml" filepath="$PROJECT_DIR$/DynamicProgramming/DynamicProgramming.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EveryDay/EveryDay.iml" filepath="$PROJECT_DIR$/EveryDay/EveryDay.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Graph/Graph.iml" filepath="$PROJECT_DIR$/Graph/Graph.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GreedyAlgorithm/GreedyAlgorithm.iml" filepath="$PROJECT_DIR$/GreedyAlgorithm/GreedyAlgorithm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HeadyString/HeadyString.iml" filepath="$PROJECT_DIR$/HeadyString/HeadyString.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaSTL/JavaSTL.iml" filepath="$PROJECT_DIR$/JavaSTL/JavaSTL.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/LeetCode.iml" filepath="$PROJECT_DIR$/.idea/LeetCode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LinkedList/LinkedList.iml" filepath="$PROJECT_DIR$/LinkedList/LinkedList.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MathProblem/MathProblem.iml" filepath="$PROJECT_DIR$/MathProblem/MathProblem.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Other/Other.iml" filepath="$PROJECT_DIR$/Other/Other.iml" />
+      <module fileurl="file://$PROJECT_DIR$/OtherComplexDataStructure/OtherComplexDataStructure.iml" filepath="$PROJECT_DIR$/OtherComplexDataStructure/OtherComplexDataStructure.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Search/Search.iml" filepath="$PROJECT_DIR$/Search/Search.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SortAlgorithm/SortAlgorithm.iml" filepath="$PROJECT_DIR$/SortAlgorithm/SortAlgorithm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Tree/Tree.iml" filepath="$PROJECT_DIR$/Tree/Tree.iml" />
+    </modules>
+  </component>
+</project>
