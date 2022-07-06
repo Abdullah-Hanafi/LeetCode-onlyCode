@@ -26,7 +26,21 @@
  */
 class Solution {
     public int[] reversePrint(ListNode head) {
+        if (head == null){
+            return new int[0];
+        }
+        Deque<Integer> stack = new LinkedList<>();
+        while(head != null){
+            stack.push(head.val);
+            head = head.next;
+        }
 
+        int[] answer = new int[stack.size()];
+        int index = 0;
+        while(!stack.isEmpty()){
+            answer[index++] = stack.pop();
+        }
+        return answer;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)
