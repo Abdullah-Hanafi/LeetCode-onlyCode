@@ -32,18 +32,39 @@
 
 
 //leetcode submit region begin(Prohibit modification and deletion)
+
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
- *     int val;
- *     TreeNode left;
- *     TreeNode right;
- *     TreeNode(int x) { val = x; }
+ * int val;
+ * TreeNode left;
+ * TreeNode right;
+ * TreeNode(int x) { val = x; }
  * }
  */
 class Solution {
+    Map<Integer, Integer> pos = new HashMap<>();
+
     public TreeNode buildTree(int[] preorder, int[] inorder) {
-        
+        //1.建立inorder的map，key为节点值，value为节点在inorder中的下标，方便找根节点在inorder中的位置
+        for (int i = 0; i < inorder.length; i++) {
+            pos.put(inorder[i], i);
+        }
+        TreeNode root = helper(preorder,0,preorder.length-1,inorder,0,inorder.length-1);
+        return root;
+    }
+
+    //构造树的辅助函数
+    public TreeNode helper(int[] preorder, int pBegin, int pEnd, int[] inorder, int iBegin, int iEnd) {
+        //递归出口
+        if (pBegin > pEnd) {
+            return null;
+        }
+        int position = pos.get(preorder[pBegin]);
+        TreeNode root = new TreeNode(preorder[pBegin]);
+        root.left = helper(preorder, pBegin + 1, pBegin + position - iBegin, inorder, iBegin, position - 1);
+        root.right = helper(preorder, pBegin + position - iBegin+1, pEnd, inorder, position + 1, iEnd);
+        return root;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)
