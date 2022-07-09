@@ -41,11 +41,20 @@
 //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int minArray(int[] numbers) {
-        int min = numbers[0];
-        for (int i = 0; i < numbers.length;i++){
-            min = Math.min(min,numbers[i]);
+        int left = 0;
+        int right = numbers.length - 1;
+        while (left <= right) {
+            int mid = left + (right - left) / 2;
+            if (numbers[mid] == numbers[right]) {
+                right--;
+            } else if (numbers[mid] < numbers[right]) {
+                right = mid;
+            } else {
+                left = mid + 1;
+            }
         }
-        return min;
+
+        return numbers[left];
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)
