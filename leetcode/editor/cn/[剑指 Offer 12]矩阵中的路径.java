@@ -48,7 +48,7 @@ class Solution {
     public boolean exist(char[][] board, String word) {
         visited = new boolean[board.length][board[0].length];
         for (int i = 0; i < board.length; i++) {
-            for (int j = 0; j < board[0].length; j++) {
+            for (int j = 0; j < board[0].length;j++){
                 if (backtrack(board, word, i, j, 0)) {
                     return true;
                 }
@@ -58,41 +58,24 @@ class Solution {
     }
 
     public boolean backtrack(char[][] board, String word, int row, int col, int index) {
-
+        //出口
         if (index == word.length()) {
             return true;
         }
-
-        if (row < 0 || row >= board.length || col < 0 || col >= board[0].length) {
+        //边界判断、访问判断、不等判断
+        if (row < 0 || row >= board.length || col < 0 || col >= board[0].length || visited[row][col] || board[row][col] != word.charAt(index)) {
             return false;
         }
 
-        if (visited[row][col]) {
-            return false;
-        }
-
-        if (board[row][col] != word.charAt(index)) {
-            return false;
-        }
-
+        //访问该字符
         visited[row][col] = true;
-        boolean flag1 = backtrack(board, word, row - 1, col, index + 1);
-        if (flag1) {
-            return true;
-        }
 
-        boolean flag2 = backtrack(board, word, row + 1, col, index + 1);
-        if (flag2) {
-            return true;
-        }
-
+        boolean flag1 = backtrack(board, word, row + 1, col, index + 1);
+        boolean flag2 = backtrack(board, word, row - 1, col, index + 1);
         boolean flag3 = backtrack(board, word, row, col + 1, index + 1);
-        if (flag3) {
-            return true;
-        }
-
         boolean flag4 = backtrack(board, word, row, col - 1, index + 1);
-        if (flag4) {
+
+        if (flag1 || flag2 || flag3 || flag4) {
             return true;
         }
 
