@@ -35,19 +35,15 @@
 class Solution {
     public int numWays(int n) {
         final int MOD = 1000000007;
-        if (n <= 1){
-            return 1;
-        }
-
-        int first = 0;
-        int second = 1;
+        int first = 1; //当n=0的值，也是循环体执行n次以后的结果。
+        int second = 1; //初始化为当n=1的值
         int answer = 1;
-        for (int i = 2; i <= n; i++){
+        for (int i = 0; i < n; i++) {
+            answer = (first + second) % MOD;
             first = second;
             second = answer;
-            answer = (first + second) % MOD;
         }
-        return answer;
+        return first;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)
