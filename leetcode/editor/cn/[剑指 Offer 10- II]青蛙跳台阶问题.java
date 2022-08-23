@@ -35,19 +35,15 @@
 class Solution {
     public int numWays(int n) {
         final int MOD = 1000000007;
-        if (n <= 1){
-            return 1;
-        }
-
-        int first = 0;
+        int first = 1;
         int second = 1;
         int answer = 1;
-        for (int i = 2; i <= n; i++){
+        for (int i = 0; i < n; i++) {
+            answer = (first + second) % MOD;
             first = second;
             second = answer;
-            answer = (first + second) % MOD;
         }
-        return answer;
+        return first;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)
