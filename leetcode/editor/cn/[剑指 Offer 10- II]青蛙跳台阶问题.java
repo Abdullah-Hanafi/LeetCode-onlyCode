@@ -35,7 +35,7 @@
 class Solution {
     public int numWays(int n) {
         final int MOD = 1000000007;
-        int first = 1;
+        int first = 1;	//与斐波那契数列有所不同
         int second = 1;
         int answer = 1;
         for (int i = 0; i < n; i++) {
