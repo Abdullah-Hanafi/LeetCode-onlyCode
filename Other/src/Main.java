@@ -1,6 +1,8 @@
 public class Main {
     public static void main(String[] args) {
-        String answer = "answer";
-        System.out.println(String.valueOf(123).equals("123"));
+        String chenmo = "³ÁÄ¬";
+        String wanger = "Íõ¶þ";
+        System.out.println(chenmo + wanger);
     }
+
 }
