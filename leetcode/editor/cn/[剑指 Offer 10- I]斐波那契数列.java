@@ -37,21 +37,16 @@
 //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int fib(int n) {
-        if (n == 0) {
-            return 0;
-        } else if (n == 1) {
-            return 1;
-        }
         final int MOD = 1000000007;
         int first = 0;
         int second = 1;
         int answer = 1;
-        for (int i = 2; i <= n; i++) {
+        for (int i = 0; i < n; i++) {
             answer = (first + second) % MOD;
             first = second;
             second = answer;
         }
-        return answer;
+        return first;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)
