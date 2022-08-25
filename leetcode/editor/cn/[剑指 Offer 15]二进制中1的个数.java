@@ -53,13 +53,14 @@
 public class Solution {
     // you need to treat n as an unsigned value
     public int hammingWeight(int n) {
-        int count = 0;
+        int cnt = 0;
         for (int i = 0; i < 32; i++) {
-            if ((n & (1 << i)) != 0){
-                count++;
+            if ((n & (1 << i)) != 0) {
+                cnt++;
             }
         }
-        return count;
+        return cnt;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)
+

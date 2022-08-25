@@ -33,16 +33,17 @@
 //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int cuttingRope(int n) {
+        final int MOD = 1000000007;
         if (n <= 3) return n - 1;
         int a = n / 3;
         int b = n % 3;
         long answer = 1;
-        for (int i = 1; i < a; i++) {
-            answer = 3 * answer % 1000000007;
+        for (int i = 0; i < a - 1; i++) {
+            answer = 3 * answer % MOD;
         }
-        if (b == 0) return (int) (3 * answer % 1000000007);
-        if (b == 1) return (int) (answer * 4 % 1000000007);
-        return (int) (answer * 6 % 1000000007);
+        if (b == 0) return (int) (3 * answer % MOD);
+        if (b == 1) return (int) (answer * 4 % MOD);
+        return (int) (answer * 6 % MOD);
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)
