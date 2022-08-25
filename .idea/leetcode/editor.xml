@@ -25,6 +25,28 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../LeetCode/leetcode/editor/cn/[剑指 Offer 12]矩阵中的路径.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../LeetCode/leetcode/editor/cn/doc/content/[剑指 Offer 12]矩阵中的路径.md" />
+              <option name="frontendQuestionId" value="leetcode.cn剑指 Offer 12" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/../LeetCode/leetcode/editor/cn/[剑指 Offer 12]矩阵中的路径.java" />
+              <option name="titleSlug" value="ju-zhen-zhong-de-lu-jing-lcof" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../LeetCode/leetcode/editor/cn/[剑指 Offer 14- I]剪绳子.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../LeetCode/leetcode/editor/cn/doc/content/[剑指 Offer 14- I]剪绳子.md" />
+              <option name="frontendQuestionId" value="leetcode.cn剑指 Offer 14- I" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/../LeetCode/leetcode/editor/cn/[剑指 Offer 14- I]剪绳子.java" />
+              <option name="titleSlug" value="jian-sheng-zi-lcof" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/leetcode/editor/cn/[100]相同的树.java">
           <value>
             <LeetcodeEditor>
@@ -732,10 +754,10 @@
         <entry key="$PROJECT_DIR$/leetcode/editor/cn/[剑指 Offer 12]矩阵中的路径.java">
           <value>
             <LeetcodeEditor>
-              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/[剑指 Offer 12]矩阵中的路径.md" />
+              <option name="contentPath" value="$PROJECT_DIR$/../LeetCode/leetcode/editor/cn/doc/content/[剑指 Offer 12]矩阵中的路径.md" />
               <option name="frontendQuestionId" value="leetcode.cn剑指 Offer 12" />
               <option name="host" value="leetcode.cn" />
-              <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/[剑指 Offer 12]矩阵中的路径.java" />
+              <option name="path" value="$PROJECT_DIR$/../LeetCode/leetcode/editor/cn/[剑指 Offer 12]矩阵中的路径.java" />
               <option name="titleSlug" value="ju-zhen-zhong-de-lu-jing-lcof" />
             </LeetcodeEditor>
           </value>
@@ -765,10 +787,10 @@
         <entry key="$PROJECT_DIR$/leetcode/editor/cn/[剑指 Offer 14- I]剪绳子.java">
           <value>
             <LeetcodeEditor>
-              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/[剑指 Offer 14- I]剪绳子.md" />
+              <option name="contentPath" value="$PROJECT_DIR$/../LeetCode/leetcode/editor/cn/doc/content/[剑指 Offer 14- I]剪绳子.md" />
               <option name="frontendQuestionId" value="leetcode.cn剑指 Offer 14- I" />
               <option name="host" value="leetcode.cn" />
-              <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/[剑指 Offer 14- I]剪绳子.java" />
+              <option name="path" value="$PROJECT_DIR$/../LeetCode/leetcode/editor/cn/[剑指 Offer 14- I]剪绳子.java" />
               <option name="titleSlug" value="jian-sheng-zi-lcof" />
             </LeetcodeEditor>
           </value>
